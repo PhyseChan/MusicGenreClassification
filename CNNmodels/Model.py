@@ -7,7 +7,7 @@ from prefetch_generator import BackgroundGenerator
 import time
 
 class CnnModel(tr.nn.Module):
-    def __init__(self,num_class=10):
+    def __init__(self,num_class=8):
         super(CnnModel, self).__init__()
         #data (40,368)
         self.conv1 = tr.nn.Sequential(
